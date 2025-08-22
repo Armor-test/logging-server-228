@@ -1,0 +1,35 @@
+# CODEOWNERS file for logging-server-228
+# Global owners - will be requested for all PRs
+* @Armor-test/team-notifications @Armor-test/squad-frontend @Armor-test/grp-search
+
+# Directory ownership
+/modules/ @Armor-test/dept-data @Armor-test/squad-cloud
+/public/ @Armor-test/dept-reliability @Armor-test/squad-mobile @Armor-test/team-notifications
+/helpers/ @Armor-test/grp-search @Armor-test/team-research
+/build/ @Armor-test/dept-release @Armor-test/grp-search @Armor-test/team-security
+/hooks/ @Armor-test/dept-ui @Armor-test/squad-apps
+/vendor/ @Armor-test/team-research @Armor-test/dept-notifications @Armor-test/grp-storage
+/dist/ @Armor-test/squad-qa @Armor-test/team-research
+/tests/ @Armor-test/dept-data @Armor-test/unit-devops @Armor-test/dept-release
+/utils/ @Armor-test/dept-logging @Armor-test/dept-identity @Armor-test/squad-ml
+/static/ @Armor-test/squad-ux @Armor-test/unit-test @Armor-test/squad-ml
+/src/ @Armor-test/squad-qa @Armor-test/grp-reporting
+/shared/ @Armor-test/unit-cloud @Armor-test/squad-product @Armor-test/team-security
+
+# File type ownership
+*.config @Armor-test/squad-payments @Armor-test/squad-frontend @Armor-test/squad-product
+*.graphql @Armor-test/dept-billing @Armor-test/squad-tooling
+*.gradle @Armor-test/grp-integration @Armor-test/squad-cache @Armor-test/dept-identity
+*.ts @Armor-test/grp-payments @Armor-test/unit-test
+*.properties @Armor-test/team-logging @Armor-test/squad-performance @Armor-test/grp-search
+*.js @Armor-test/squad-frontend @Armor-test/squad-database
+*.jsx @Armor-test/team-research @Armor-test/team-frontend
+*.sh @Armor-test/dept-release @Armor-test/squad-reporting
+*.rb @Armor-test/team-research @Armor-test/squad-ml
+*.cpp @Armor-test/squad-tooling @Armor-test/squad-qa @Armor-test/squad-search
+
+# Security and special files
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+Dockerfile @Armor-test/devops @Armor-test/infra
